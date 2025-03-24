@@ -1,7 +1,7 @@
 body {
 	font-family: 'Noto Sans', sans-serif;
-	background: #caebf2;
-	color: #001f3f;
+	background-color: #f4f4f4;
+    color: #333;
 }
 
 h1, h2, h3, h4 {
@@ -24,6 +24,7 @@ h1, h2, h3, h4 {
 .about-grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 20px; 
 }
 
 .i-am, .i-like {
@@ -34,6 +35,15 @@ h1, h2, h3, h4 {
 .about-list {
     list-style: none;
     padding: 0;
+}
+
+.skills {
+    text-align: center; 
+}
+
+.skills .about-list {
+    display: inline-block; 
+    text-align: left; 
 }
 
 .projects-heading {
@@ -80,9 +90,17 @@ form input[type="submit"] {
 }
 
 .submit-button-wrapper {
-	margin: 20px 0;
+    margin: 20px 0;
     background-color: aqua;
     color: black;
+    border: none; 
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.submit-button-wrapper:hover {
+    background-color: #00b7eb;
 }
 
 .map{
